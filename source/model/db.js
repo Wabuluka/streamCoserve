@@ -12,7 +12,7 @@ let config = {
 	database: process.env.DB,
 }
 
-let db = mysql.createPool(`mysql://bbe359d79e93d2:331230ea@us-cdbr-east-03.cleardb.com/heroku_c2f6bb4515a5a42?reconnect=true`)
+let db = mysql.createPool(process.env.CLEARDB_DATABASE_URL)
 
 
 
